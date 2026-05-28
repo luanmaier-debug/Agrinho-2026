@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Agrinho 2026</h1>
+        <p>Agro Forte, Futuro Sustentável: O Equilíbrio entre Programação e Meio Ambiente</p>
+    </header>
+
+    <main class="container">
+        <section class="card manifesto">
+            <h2>Tecnologia a Serviço da Terra</h2>
+            <p>
+                A programação não está isolada do campo. Linhas de código bem escritas otimizam o uso de água, 
+                reduzem o desperdício de insumos e monitoram a saúde do solo. Programar, hoje, é semear o amanhã.
+            </p>
+        </section>
+
+        <section class="card simulador">
+            <h2>Simulador de Equilíbrio Eco-Digital</h2>
+            <p>Ajuste os investimentos em tecnologia e preservação para encontrar o equilíbrio perfeito.</p>
+            
+            <div class="controles">
+                <div class="controle-grupo">
+                    <label for="slider-tech">Linhas de Código (Eficiência Tech):</label>
+                    <input type="range" id="slider-tech" min="0" max="100" value="50">
+                    <span id="val-tech">50%</span>
+                </div>
+
+                <div class="controle-grupo">
+                    <label for="slider-agro">Preservação Ambiental:</label>
+                    <input type="range" id="slider-agro" min="0" max="100" value="50">
+                    <span id="val-agro">50%</span>
+                </div>
+            </div>
+
+            <div class="resultado-painel">
+                <h3>Status do Ecossistema:</h3>
+                <div id="status-mensagem" class="status-alerta">Avaliando equilíbrio...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Agrinho - Programando um Futuro Mais Verde.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
