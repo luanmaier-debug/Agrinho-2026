@@ -1,0 +1,153 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f7f4;
+    color: #2d3748;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Layout Principal */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex: 1;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #52b788;
+}
+
+.manifesto h2 {
+    color: #1b4332;
+    margin-bottom: 1rem;
+}
+
+.manifesto p {
+    line-height: 1.6;
+    color: #4a5568;
+}
+
+/* Controles do Simulador */
+.simulador h2 {
+    color: #1b4332;
+    margin-bottom: 0.5rem;
+}
+
+.simulador > p {
+    color: #718096;
+    margin-bottom: 2rem;
+}
+
+.controles {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.controle-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.controle-grupo label {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: #2d6a4f;
+    cursor: pointer;
+}
+
+.controle-grupo span {
+    align-self: flex-end;
+    font-weight: bold;
+    color: #2d6a4f;
+    background: #e8f5e9;
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+/* Painel de Resultado */
+.resultado-painel {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.resultado-painel h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #4a5568;
+}
+
+.status-alerta {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Classes dinâmicas injetadas pelo JS */
+.status-sucesso {
+    background-color: #d8f3dc;
+    color: #1b4332;
+    border: 1px solid #b7e4c7;
+}
+
+.status-aviso {
+    background-color: #fef3c7;
+    color: #92400e;
+    border: 1px solid #fde68a;
+}
+
+/* Rodapé */
+footer {
+    background: #1b4332;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
